@@ -93,7 +93,7 @@ python foundry.py init js-adder --hook "Adds two numbers from one command" --tes
 ## Banned words
 
 `banned_words.txt` holds one word or phrase per line. A match must stand alone: no letter, digit or underscore
-directly before or after it, so a banned word inside a longer English word (`carefree`) never trips station 5,
+directly before or after it, so a banned word inside a longer English word (`cat` inside `concatenate`) never trips station 5,
 while the word itself is caught in any case and beside any punctuation (`Word!`, `(word)`, `word-tier`). Files are
 read as UTF-8, or as UTF-16 when they carry a byte-order mark or are mostly NUL bytes, so a word saved by a
 UTF-16 editor is still found. Write scenarios before station 3 seals them. The taste review is a separate file the evaluator writes after looking at the running product.
